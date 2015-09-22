@@ -38,3 +38,5 @@ day = input ("And the day?")
 
 if month == "october" and day == "31":
     print("You were born on Halloween!")
+if month == "september" and day == "23":
+    print("Happy Birthday!")
