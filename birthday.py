@@ -38,5 +38,22 @@ day = input ("And the day?")
 
 if month == "october" and day == "31":
     print("You were born on Halloween!")
-if month == "september" and day == "23":
+elif month == "september" and day == "23":
     print("Happy Birthday!")
+elif month is "december" or "febuary" or "january":
+    season = "winter"
+elif month is "march" or "april" or "may":
+    season = "spring"
+elif month is "june" or "july" or "august":
+    season = "summer"
+elif month is "september" or "october" or "november":
+    season = "fall"
+    
+if year < 1980:
+    era= "stone age"
+elif year <1989:
+    era = "eighties"
+elif year <1999:
+    era = "nineties"
+elif year >= 2000:
+    ear = "two thousands"
