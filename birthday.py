@@ -40,20 +40,22 @@ if month == "october" and day == "31":
     print("You were born on Halloween!")
 elif month == "september" and day == "23":
     print("Happy Birthday!")
-elif month is "december" or "febuary" or "january":
+elif month == "december" or "febuary" or "january":
     season = "winter"
-elif month is "march" or "april" or "may":
+elif month == "march" or "april" or "may":
     season = "spring"
-elif month is "june" or "july" or "august":
+elif month == "june" or "july" or "august":
     season = "summer"
-elif month is "september" or "october" or "november":
+elif month == "september" or "october" or "november":
     season = "fall"
     
-if year < 1980:
-    era= "stone age"
-elif year <1989:
-    era = "eighties"
-elif year <1999:
-    era = "nineties"
-elif year >= 2000:
-    ear = "two thousands"
+if int(year) < int(1980):
+    era= " stone age"
+elif int(year) < 1989:
+    era = " eighties"
+elif int(year) < int(1999):
+    era = " nineties"
+elif int(year) >= int(2000):
+    era = " two thousands"
+    
+print(name + ", you are a "+ season +" baby of the"+ era +".")
