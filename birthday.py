@@ -40,13 +40,13 @@ if month == "october" and day == "31":
     print("You were born on Halloween!")
 elif month == "september" and day == "23":
     print("Happy Birthday!")
-elif month == "december" or "febuary" or "january":
+elif month == "december" or month=="february" or month=="january":
     season = "winter"
-elif month == "march" or "april" or "may":
+elif month == "march" or month =="april" or month=="may":
     season = "spring"
-elif month == "june" or "july" or "august":
+elif month == "june" or month=="july" or month=="august":
     season = "summer"
-elif month == "september" or "october" or "november":
+elif month == "september" or month=="october" or month=="november":
     season = "fall"
     
 if int(year) < int(1980):
