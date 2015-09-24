@@ -55,9 +55,9 @@ elif month == "june" or month=="july" or month=="august":
 elif month == "september" or month=="october" or month=="november":
     season = "fall"
     
-if int(year) < int(1980):
+if int(year) < int("1980"):
     era= " stone age"
-elif int(year) < 1989:
+elif int(year) < int(1989):
     era = " eighties"
 elif int(year) < int(1999):
     era = " nineties"
