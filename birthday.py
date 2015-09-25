@@ -1,7 +1,7 @@
 """
 birthday.py
 Author: Dina
-Credit: none
+Credit: Mr.Dennison, Jazzy, Anoushka
 Assignment:
 
 Your program will ask the user the following questions, in this order:
