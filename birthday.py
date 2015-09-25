@@ -37,10 +37,10 @@ todaymonth = datetime.today().month
 todaydate = datetime.today().day
 
 name = input ("Hello, what is your name?")
-month = input ("Hi "+ name +", what was the name of the month you were born in?")
+month = input (" Hi "+ name +", what was the name of the month you were born in?")
 month = month.lower()
-year = input ("And what year were you born in, " + name + "?")
-day = input ("And the day?")
+year = input (" And what year were you born in, " + name + "?")
+day = input (" And the day?")
 monthdate = month_name[todaymonth]
 monthNow = monthdate.lower()
 
@@ -66,4 +66,4 @@ elif int(year) < 1990:
 elif int(year) < 2000:
     print(name + ", you are a "+ season +" baby of the nineties.")
 elif int(year) > 2000:
-    print(name + ", you are a "+ season +" baby of the two thousands.")
+    print( " " + name + ", you are a "+ season +" baby of the two thousands.")
