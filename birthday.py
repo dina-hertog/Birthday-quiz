@@ -44,11 +44,7 @@ day = input ("And the day?")
 monthNow = month_name[todaymonth]
 monthNow = monthNow.lower()
 
-if month == "october" and day == "31":
-    print("You were born on Halloween!")
-elif month == monthNow and day == todaydate:
-    print("Happy Birthday!")
-elif month == "december" or month=="february" or month=="january":
+if month == "december" or month=="february" or month=="january":
     season = "winter"
 elif month == "march" or month =="april" or month=="may":
     season = "spring"
@@ -57,13 +53,15 @@ elif month == "june" or month=="july" or month=="august":
 elif month == "september" or month=="october" or month=="november":
     season = "fall"
     
-if int(year) < 1980:
-    era= " stone age"
+if month == "october" and day == "31":
+    print("You were born on Halloween!")
+elif month == monthNow and day == todaydate:
+    print("Happy Birthday!")
+elif int(year) < 1980:
+    print(name + ", you are a "+ season +" baby of the"+ era +".")
 elif int(year) < 1990:
-    era = " eighties"
+    print(name + ", you are a "+ season +" baby of the"+ era +".")
 elif int(year) < 2000:
-    era = " nineties"
+    print(name + ", you are a "+ season +" baby of the"+ era +".")
 else:
-    era = " two thousands"
-    
-print(name + ", you are a "+ season +" baby of the"+ era +".")
+    print(name + ", you are a "+ season +" baby of the"+ era +".")
