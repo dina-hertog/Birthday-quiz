@@ -41,8 +41,8 @@ month = input ("Hi "+ name +", what was the name of the month you were born in?"
 month = month.lower()
 year = input ("And what year were you born in, " + name + "?")
 day = input ("And the day?")
-monthNow = month_name[todaymonth]
-monthNow = monthNow.lower()
+monthdate = month_name[todaymonth]
+monthNow = monthdate.lower()
 
 if month == "december" or month=="february" or month=="january":
     season = "winter"
@@ -52,16 +52,18 @@ elif month == "june" or month=="july" or month=="august":
     season = "summer"
 elif month == "september" or month=="october" or month=="november":
     season = "fall"
+else:
+    print("I don't understand")
     
 if month == "october" and day == "31":
     print("You were born on Halloween!")
-elif month == monthNow and day == todaydate:
+elif month == monthNow and int(day) == todaydate:
     print("Happy Birthday!")
 elif int(year) < 1980:
-    print(name + ", you are a "+ season +" baby of the"+ era +".")
+    print(name + ", you are a "+ season +" baby of the stone age.")
 elif int(year) < 1990:
-    print(name + ", you are a "+ season +" baby of the"+ era +".")
+    print(name + ", you are a "+ season +" baby of the eighties.")
 elif int(year) < 2000:
-    print(name + ", you are a "+ season +" baby of the"+ era +".")
-else:
-    print(name + ", you are a "+ season +" baby of the"+ era +".")
+    print(name + ", you are a "+ season +" baby of the nineties.")
+elif int(year) > 2000:
+    print(name + ", you are a "+ season +" baby of the two thousands.")
