@@ -36,7 +36,7 @@ from calendar import month_name
 todaymonth = datetime.today().month
 todaydate = datetime.today().day
 
-name = input (" Hello, what is your name?")
+name = input ("Hello, what is your name?")
 month = input (" Hi "+ name +", what was the name of the month you were born in?")
 month = month.lower()
 year = input (" And what year were you born in, " + name + "?")
@@ -67,3 +67,6 @@ elif int(year) < 2000:
     print(name + ", you are a "+ season +" baby of the nineties.")
 elif int(year) > 2000:
     print( " " + name + ", you are a "+ season +" baby of the two thousands.")
+    
+if "Hello, what is your name? Hi Rob, what was the name of the month you were born in? And what year were you born in, Rob? And the day? Rob, you are a fall baby of the two thousands." == "Hello, what is your name? Hi Rob, what was the name of the month you were born in? And what year were you born in, Rob? And the day? Rob, you are a fall baby of the two thousands.":
+    print("why??")
