@@ -60,7 +60,7 @@ if month == "october" and day == "31":
 elif month == monthNow and int(day) == todaydate:
     print("Happy Birthday!")
 elif int(year) < 1980:
-    print(name + ", you are a "+ season +" baby of the stone age.")
+    print(name + ", you are a "+ season +" baby of the Stone Age.")
 elif int(year) < 1990:
     print(name + ", you are a "+ season +" baby of the eighties.")
 elif int(year) < 2000:
